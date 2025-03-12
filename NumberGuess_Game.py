@@ -1,5 +1,6 @@
 import random
 
+## Creates number to guess
 MagicNumber=random.randrange(1,101)
 
 ## Initialization of initial variables ##
@@ -70,7 +71,3 @@ elif ComGuess == MagicNumber != MyGuess:
     print(f"YOU LOST. The computer won. The number was {MagicNumber}. Took it {counter + 1} guesses.")
 elif MyGuess == MagicNumber == ComGuess:
     print(f"YOU BOTH GUESSED CORRECTLY!!! The number was {MagicNumber}. Took you all {counter} guesses.")
-
-print(f"Low is {LowerLimit}.\n")
-print(f"High is {UpperLimit}.\n")
-print(f"Comp Guess was {ComGuess}.\n")
